@@ -1,38 +1,28 @@
 [
   {
     "type": "body",
-    "description": "Estique um de seus braços com a palma da mão virada para frente e puxe os dedos para cima por 10 segundos por mão. E faça 20 abdominais normais.",
+    "description": "15 elevés em cada pé.",
     "amount": 180
   },
   {
     "type": "body",
-    "description": "Estique seu braço contra o peito e puxe-o utilizando o outro braço por 10 segundos por braço e faça 15 agachamentos. ",
-    "amount": 160
-  },
-  {
-    "type": "body",
-    "description": "Puxe seu pescoço com a ajuda da mão para a direita e para a esquerda, permanecendo na posição por alguns segundos e faça 10 flexões paralelas.",
-    "amount": 170
-  },
-  {
-    "type": "body",
-    "description": "Com as duas mãos na parte de trás da cabeça, leve-a para baixo, alongando a parte de trás da região e faça 10 flexões fechadas.",
-    "amount": 160
-  },
-  {
-    "type": "body",
-    "description": "Faça 15 flexões abertas.",
-    "amount": 200
-  },
-  {
-    "type": "body",
-    "description": "Em pé, tente encostar a palma da mão no chão com as pernas esticadas por 20 segundos.",
+    "description": "15 segundos na abertura de quarta de cada lado.",
     "amount": 180
   },
   {
     "type": "body",
-    "description": "Em pé, puxe o joelho de encontro ao peito e segure, troque de perna após 10 segundos e depois repita para trás.",
-    "amount": 50
+    "description": "15 segundos na abertura de segunda.",
+    "amount": 180
+  },
+  {
+    "type": "body",
+    "description": "30 segundos de cada lado deitada com passé.",
+    "amount": 180
+  },
+  {
+    "type": "body",
+    "description": "30 segundos na abertura de segunda invertida.",
+    "amount": 180
   },
   {
     "type": "eye",
@@ -48,25 +38,5 @@
     "type": "eye",
     "description": "Usando os polegares, massage a área abaixo das sobrancelhas em movimentos circulares por 15 segundos.",
     "amount": 70
-  },
-  {
-    "type": "body",
-    "description": "Em pé, gire a cintura o máximo que puder para a esquerda, segure por cinco segundos. Repita para a direita.",
-    "amount": 90
-  },
-  {
-    "type": "body",
-    "description": "Faça 15 abdominais laterais para cada lado.",
-    "amount": 190
-  },
-  {
-    "type": "body",
-    "description": "Faça 20 abdominais elevados.",
-    "amount": 190
-  },
-  {
-    "type": "body",
-    "description": "Faça 15 agachamentos de uma perna com cada uma das pernas.",
-    "amount": 190
   }
 ]

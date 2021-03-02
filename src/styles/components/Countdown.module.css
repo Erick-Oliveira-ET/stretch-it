@@ -25,11 +25,11 @@
 }
 
 .container > div span:first-child {
-  border-right: 1px solid #44568d;
+  border-right: 1px solid var(--background);
 }
 
 .container > div span:last-child {
-  border-left: 1px solid #44568d;
+  border-left: 1px solid var(--background);
 }
 
 .container > span {
