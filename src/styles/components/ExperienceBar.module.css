@@ -1,0 +1,39 @@
+.experienceBar {
+  margin-bottom: 25px;
+
+  display: flex;
+  align-items: center;
+}
+
+.experienceBar > div {
+  flex: 1;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--background-experience-bar);
+  margin: 0 1.5rem;
+  position: relative;
+}
+
+.experienceBar > div > div {
+  height: 4px;
+  border-radius: 4px;
+  background: var(--experience);
+  box-shadow: 0px 0px 19px 3px rgba(76, 48, 236, 0.94);
+  animation: glowing 4s ease-in-out infinite;
+}
+
+span.currentExperience {
+  position: absolute;
+  top: 12px;
+  transform: translateX(-50%);
+}
+
+@keyframes glowing {
+  0%,
+  100% {
+    box-shadow: 0px 0px 19px 1px rgba(76, 48, 236, 0.94);
+  }
+  50% {
+    box-shadow: 0px 0px 19px 5px rgba(119, 100, 226, 0.94);
+  }
+}
