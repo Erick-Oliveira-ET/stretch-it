@@ -25,6 +25,21 @@
     "amount": 180
   },
   {
+    "type": "body",
+    "description": "Caminhe e beba água.",
+    "amount": 180
+  },
+  {
+    "type": "body",
+    "description": "Caminhe e beba água.",
+    "amount": 180
+  },
+  {
+    "type": "body",
+    "description": "Caminhe e beba água.",
+    "amount": 180
+  },
+  {
     "type": "eye",
     "description": "Sentado, feche os olhos e cubra-os com as palmas da mão durante 2 minutos, depois abra normalmente.",
     "amount": 90
