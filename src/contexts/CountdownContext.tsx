@@ -23,11 +23,15 @@ interface CountdownProviderProps {
 export const CountdownContext = createContext({} as CountdownContextData);
 
 let countdownTimeout: NodeJS.Timeout;
+let countdownTimeoutNotification: NodeJS.Timeout;
 
 export function CountdownProvider({ children }: CountdownProviderProps) {
   const { startNewChallenge } = useContext(ChallengesContext);
 
-  const [time, setTime] = useState(25 * 60);
+  const totalTime = 25 * 60;
+  const [time, setTime] = useState(totalTime);
+  const [start, setStart] = useState<number>();
+  const [finish, setFinish] = useState<number>();
   const [isActive, setIsActive] = useState(false);
   const [hasFinished, setHasFinished] = useState(false);
 
@@ -36,23 +40,30 @@ export function CountdownProvider({ children }: CountdownProviderProps) {
 
   function startCoutdown() {
     setIsActive(true);
+    const inicio = Date.now();
+    setStart(inicio);
+    setFinish(Date.now() + totalTime * 1000);
+
+    countdownTimeoutNotification = setTimeout(() => {
+      startNewChallenge();
+    }, totalTime * 1000);
   }
 
   function resetCountdown() {
     clearTimeout(countdownTimeout);
+    clearTimeout(countdownTimeoutNotification);
     setIsActive(false);
     setHasFinished(false);
-    setTime(25 * 60);
+    setTime(totalTime);
   }
 
   useEffect(() => {
     if (isActive && time > 0) {
       countdownTimeout = setTimeout(() => {
-        setTime(time - 1);
+        setTime(Math.floor((finish - Date.now()) / 1000));
       }, 1000);
     } else if (isActive && time === 0) {
       setHasFinished(true);
-      startNewChallenge();
     }
   }, [time, isActive]);
 
